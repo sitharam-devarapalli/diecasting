@@ -632,333 +632,405 @@ body {
     text-decoration: none;
     border-bottom: 1px solid #fff;
 }
+
 /* Tablet View: 768px to 991px */
 @media (max-width: 991px) {
-  .ssl-home-ban-card {
-    height: 180px;
-    padding: 1rem;
-  }
+    .ssl-home-ban-card {
+        height: 180px;
+        padding: 1rem;
+    }
 
-  .ssl-home-ban-title {
-    font-size: 1.1rem;
-    line-height: 1.2;
-  }
+    .ssl-home-ban-title {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
 
-  .ssl-home-ban-subtitle {
-    font-size: 0.75rem;
-  }
+    .ssl-home-ban-subtitle {
+        font-size: 0.75rem;
+    }
 
-  .ssl-home-ban-link {
-    font-size: 0.8rem;
-  }
+    .ssl-home-ban-link {
+        font-size: 0.8rem;
+    }
 }
 
 /* Mobile View: 576px to 767px */
 @media (max-width: 767px) {
-  .ssl-home-ban-card {
-    height: 160px;
-    padding: 0.75rem;
-  }
+    .ssl-home-ban-card {
+        height: 160px;
+        padding: 0.75rem;
+    }
 
-  .ssl-home-ban-title {
-    font-size: 1rem;
-  }
+    .ssl-home-ban-title {
+        font-size: 1rem;
+    }
 
-  .ssl-home-ban-subtitle {
-    font-size: 0.7rem;
-  }
+    .ssl-home-ban-subtitle {
+        font-size: 0.7rem;
+    }
 
-  .ssl-home-ban-link {
-    font-size: 0.75rem;
-  }
+    .ssl-home-ban-link {
+        font-size: 0.75rem;
+    }
 }
 
 /* Small Mobile View: below 575px */
 @media (max-width: 575px) {
-  .ssl-home-ban-card {
-    height: 150px;
-    padding: 0.5rem;
-  }
+    .ssl-home-ban-card {
+        height: 150px;
+        padding: 0.5rem;
+    }
 
-  .ssl-home-ban-title {
-    font-size: 0.95rem;
-  }
+    .ssl-home-ban-title {
+        font-size: 0.95rem;
+    }
 
-  .ssl-home-ban-subtitle {
-    font-size: 0.65rem;
-  }
+    .ssl-home-ban-subtitle {
+        font-size: 0.65rem;
+    }
 
-  .ssl-home-ban-link {
-    font-size: 0.7rem;
-    border: none;
-  }
+    .ssl-home-ban-link {
+        font-size: 0.7rem;
+        border: none;
+    }
 }
 
 
 /* our services css  */
 .ssl-home-service {
-  background-color: #000;
-  padding: 50px;
+    background-color: #000;
+    padding: 50px;
 }
 
 .ssl-home-service-title {
-  color: #fff;
+    color: #fff;
 }
 
 .ssl-home-service-subtitle {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1rem;
-  color: #ccc;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #ccc;
 }
 
 .ssl-home-service-card {
-  border: 1px solid #333;
-  transition: all 0.3s ease;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
 }
 
 .ssl-home-service-card:hover {
-  border-color: #ffa500;
-  transform: translateY(-5px);
+    border-color: #ffa500;
+    transform: translateY(-5px);
 }
 
 .ssl-home-service-img {
-  position: relative;
+    position: relative;
 }
 
 .ssl-home-service-icon {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  padding: 8px;
-  border-radius: 0px;
-  background-color: #f57c00; /* orange */
-  font-size: 1.1rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    border-radius: 0px;
+    background-color: #f57c00;
+    /* orange */
+    font-size: 1.1rem;
 }
 
 .ssl-home-service-link {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 21px;
-  color: #ffa500;
-  transition: all 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 21px;
+    color: #ffa500;
+    transition: all 0.3s ease;
 }
 
 .ssl-home-service-link:hover {
-  color: #fff;
-  transform: scale(1.2);
+    color: #fff;
+    transform: scale(1.2);
 }
 
 .ssl-rotate-arrow {
-  transform: rotate(-45deg); /* Makes it look like ↗ */
+    transform: rotate(-45deg);
+    /* Makes it look like ↗ */
 }
+
 @media (max-width: 991.98px) {
-  .ssl-home-service {
-    padding: 40px 20px;
-  }
+    .ssl-home-service {
+        padding: 40px 20px;
+    }
 
-  .ssl-home-service-subtitle {
-    font-size: 0.95rem;
-  }
+    .ssl-home-service-subtitle {
+        font-size: 0.95rem;
+    }
 
-  .ssl-home-service-link {
-    font-size: 20px;
-    bottom: 16px;
-    right: 16px;
-  }
+    .ssl-home-service-link {
+        font-size: 20px;
+        bottom: 16px;
+        right: 16px;
+    }
 
-  .ssl-home-service-icon {
-    font-size: 1rem;
-    padding: 6px;
-  }
+    .ssl-home-service-icon {
+        font-size: 1rem;
+        padding: 6px;
+    }
 }
 
 @media (max-width: 767.98px) {
-  .ssl-home-service {
-    padding: 30px 15px;
-  }
+    .ssl-home-service {
+        padding: 30px 15px;
+    }
 
-  .ssl-home-service-title {
-    font-size: 1.8rem;
-    text-align: center;
-  }
+    .ssl-home-service-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
 
-  .ssl-home-service-subtitle {
-    font-size: 0.9rem;
-    text-align: center;
-  }
+    .ssl-home-service-subtitle {
+        font-size: 0.9rem;
+        text-align: center;
+    }
 
-  .ssl-home-service-card {
-    margin-bottom: 30px;
-  }
+    .ssl-home-service-card {
+        margin-bottom: 30px;
+    }
 
-  .ssl-home-service-link {
-    font-size: 18px;
-    bottom: 14px;
-    right: 14px;
-  }
+    .ssl-home-service-link {
+        font-size: 18px;
+        bottom: 14px;
+        right: 14px;
+    }
 
-  .ssl-home-service-icon {
-    font-size: 0.9rem;
-    padding: 5px;
-  }
+    .ssl-home-service-icon {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
 }
 
 @media (max-width: 575.98px) {
-  .ssl-home-service {
-    padding: 20px 10px;
-  }
+    .ssl-home-service {
+        padding: 20px 10px;
+    }
 
-  .ssl-home-service-title {
-    font-size: 1.6rem;
-  }
+    .ssl-home-service-title {
+        font-size: 1.6rem;
+    }
 
-  .ssl-home-service-subtitle {
-    font-size: 0.85rem;
-  }
+    .ssl-home-service-subtitle {
+        font-size: 0.85rem;
+    }
 
-  .ssl-home-service-link {
-    font-size: 16px;
-    bottom: 12px;
-    right: 12px;
-  }
+    .ssl-home-service-link {
+        font-size: 16px;
+        bottom: 12px;
+        right: 12px;
+    }
 
-  .ssl-home-service-icon {
-    font-size: 0.85rem;
-    padding: 4px;
-  }
+    .ssl-home-service-icon {
+        font-size: 0.85rem;
+        padding: 4px;
+    }
 }
 
 /* banner section  */
 .ssl-home-numbercount {
-  background: url('../assets/full-banner1.jpg') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 70px 0;
-  position: relative;
+    background: url('../assets/full-banner1.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0;
+    position: relative;
 }
 
 
 .ssl-home-numbercount::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .ssl-home-numbercount .container {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .ssl-numbercount-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 .ssl-numbercount-subtitle {
-  font-size: 1.1rem;
-  margin-top: 10px;
-  max-width: 600px;
-  color: #ddd;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    max-width: 600px;
+    color: #ddd;
 }
 
 .ssl-numbercount-btn {
-  background-color: #ffa500;
-  color: #fff;
-  font-weight: 600;
-  padding: 12px 30px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: all 0.3s ease;
+    background-color: #ffa500;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .ssl-numbercount-btn:hover {
-  background-color: #ff8c00;
-  color: #000;
+    background-color: #ff8c00;
+    color: #000;
 }
+
 /* Tablet View (768px to 991px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .ssl-numbercount-title {
-    font-size: 1.8rem;
-    text-align: center;
-  }
+    .ssl-numbercount-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
 
-  .ssl-numbercount-subtitle {
-    font-size: 0.95rem;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 10px;
-  }
+    .ssl-numbercount-subtitle {
+        font-size: 0.95rem;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
 
-  .ssl-numbercount-btn {
-    display: inline-block;
-    margin: 20px auto 0;
-    font-size: 1rem;
-    padding: 10px 25px;
-  }
+    .ssl-numbercount-btn {
+        display: inline-block;
+        margin: 20px auto 0;
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
 
-  .ssl-home-numbercount .row {
-    text-align: center;
-  }
+    .ssl-home-numbercount .row {
+        text-align: center;
+    }
 }
 
 /* Mobile View (below 767px) */
 @media (max-width: 767.98px) {
-  .ssl-numbercount-title {
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 1.4;
-  }
+    .ssl-numbercount-title {
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.4;
+    }
 
-  .ssl-numbercount-subtitle {
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 0 15px;
-    margin-top: 15px;
-  }
+    .ssl-numbercount-subtitle {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0 15px;
+        margin-top: 15px;
+    }
 
-  .ssl-numbercount-btn {
-    display: inline-block;
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    margin-top: 20px;
-  }
+    .ssl-numbercount-btn {
+        display: inline-block;
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
 
-  .ssl-home-numbercount {
-    padding: 40px 0;
-    background-attachment: scroll; /* Prevent sticky issues on mobile */
-  }
+    .ssl-home-numbercount {
+        padding: 40px 0;
+        background-attachment: scroll;
+        /* Prevent sticky issues on mobile */
+    }
 }
 
 
 /* awards section css  */
 .ssl-award-home-section {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .ssl-award-home-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #333;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
 }
 
 .ssl-award-home-logos {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .ssl-award-home-logo-img {
-  max-height: 40px;
-  opacity: 0.6;
-  transition: all 0.3s ease-in-out;
-  filter: grayscale(100%);
+    max-height: 40px;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+    filter: grayscale(100%);
 }
 
 .ssl-award-home-logo-img:hover {
-  opacity: 1;
-  filter: grayscale(0%);
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+
+/* Why Choose Us - Dark Theme */
+/* Why Choose Us - Dark Theme */
+.ssl-home-whyus-section {
+  background-color: #000;
+  padding: 60px 0;
+}
+
+.ssl-home-whyus-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ssl-home-whyus-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.ssl-home-whyus-icon:hover {
+  transform: scale(1.1);
+}
+
+.ssl-home-whyus-text {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.4;
+  min-height: 60px;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  .ssl-home-whyus-title {
+    font-size: 1.75rem;
+  }
+
+  .ssl-home-whyus-text {
+    font-size: 0.95rem;
+  }
+
+  .ssl-home-whyus-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ssl-home-whyus-title {
+    font-size: 1.5rem;
+  }
+
+  .ssl-home-whyus-text {
+    font-size: 0.9rem;
+  }
+
+  .ssl-home-whyus-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
