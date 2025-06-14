@@ -1,0 +1,964 @@
+/* Global font */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.SSL-header {
+    background-color: #000;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.SSL-header .navbar-brand img {
+    height: 40px;
+}
+
+.ssl-logo-header {
+    width: 100%;
+    height: 75px;
+}
+
+.SSL-header .nav-link {
+    color: #fdfdd8;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.SSL-header .nav-link:hover {
+    color: #fffcc3;
+}
+
+.SSL-header .btn-quote {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    overflow: hidden;
+    background-color: transparent;
+    border: 2px solid #fdfdd8;
+    color: #fdfdd8;
+    font-weight: 600;
+    padding: 6px 18px;
+    border-radius: 30px;
+    transition: color 0.4s ease;
+    z-index: 1;
+}
+
+.SSL-header .btn-quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fdfdd8;
+    transition: right 0.4s ease;
+    z-index: -1;
+}
+
+.SSL-header .btn-quote:hover::before {
+    right: 0;
+}
+
+.SSL-header .btn-quote:hover {
+    color: #000;
+}
+
+.btn-quote i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.btn-quote:hover i {
+    transform: translateX(5px);
+}
+
+/* === CUSTOM MOBILE @ 486px === */
+@media (max-width: 486px) {
+    .SSL-header {
+        padding: 10px 15px;
+    }
+
+    .SSL-header .navbar-brand img {
+        height: 45px;
+        max-width: 160px;
+    }
+
+    /* Navbar collapse background */
+    .navbar-collapse {
+        background-color: #000;
+        padding: 15px;
+    }
+
+    /* Nav vertical stack */
+    .navbar-nav {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .SSL-header .nav-link {
+        font-size: 13px;
+    }
+
+    /* Button full width and margin top */
+    .SSL-header .btn-quote {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 14px;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+/* === CUSTOM TABLET @ 786px === */
+@media (max-width: 786px) and (min-width: 487px) {
+    .SSL-header {
+        padding: 12px 25px;
+    }
+
+    .SSL-header .navbar-brand img {
+        height: 45px;
+        max-width: 160px;
+    }
+
+    /* Navbar collapse background */
+    .navbar-collapse {
+        background-color: #000;
+        padding: 15px;
+    }
+
+    /* Nav vertical stack */
+    .navbar-nav {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .SSL-header .nav-link {
+        font-size: 14px;
+    }
+
+    /* Button full width and margin top */
+    .SSL-header .btn-quote {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 15px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+/* carousel css */
+.ssl-carousel-caption {
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    max-width: 50%;
+    padding: 10px;
+    text-align: start;
+    transition: opacity 0.7s ease;
+}
+
+.ssl-carousel-heading {
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.ssl-carousel-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    margin-top: 10px;
+}
+
+.ssl-carousel-img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.ssl-carousel-counter {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.carousel-btn-quote {
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent;
+    border: 2px solid #fdfdd8;
+    color: #fdfdd8;
+    font-weight: 600;
+    padding: 6px 18px;
+    border-radius: 30px;
+    transition: color 0.4s ease;
+    z-index: 1;
+}
+
+.carousel-btn-quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fdfdd8;
+    transition: right 0.4s ease;
+    z-index: -1;
+}
+
+.carousel-btn-quote:hover::before {
+    right: 0;
+}
+
+.carousel-btn-quote:hover {
+    color: #000;
+}
+
+.carousel-btn-quote i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.carousel-btn-quote:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 991.98px) {
+    .ssl-carousel-caption {
+        top: 30%;
+        left: 30px;
+        max-width: 80%;
+        padding: 8px;
+    }
+
+    .ssl-carousel-heading {
+        font-size: 1.8rem;
+    }
+
+    .ssl-carousel-text {
+        font-size: 1rem;
+    }
+
+    .carousel-btn-quote {
+        padding: 5px 15px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ssl-carousel-caption {
+        top: 25%;
+        left: 20px;
+        max-width: 90%;
+        padding: 6px;
+    }
+
+    .ssl-carousel-heading {
+        font-size: 1.5rem;
+    }
+
+    .ssl-carousel-text {
+        font-size: 0.95rem;
+    }
+
+    .carousel-btn-quote {
+        padding: 5px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ssl-carousel-caption {
+        top: 20%;
+        left: 15px;
+        max-width: 95%;
+        padding: 5px;
+    }
+
+    .ssl-carousel-heading {
+        font-size: 1.3rem !important;
+    }
+
+    .ssl-carousel-text {
+        font-size: 0.9rem !important;
+    }
+
+    .carousel-btn-quote {
+        padding: 4px 10px;
+        font-size: 0.85rem;
+    }
+
+    .ssl-carousel-img {
+        height: 150px;
+    }
+}
+
+
+/* home about us css  */
+.ssl-home-about {
+    background-color: #000;
+    color: #fff;
+}
+
+.ssl-home-about-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.ssl-home-about-text {
+    color: #bcbcbc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.ssl-home-about-btn .btn {
+    border-radius: 0;
+}
+
+.ssl-home-about-img {
+    object-fit: cover !important;
+    height: 500px !important;
+}
+
+.btn-about1 {
+    background: #202020;
+    border: 1px solid #202020;
+}
+
+.btn-about1:hover {
+    background: #000000;
+    border: 1px solid #fff;
+}
+
+.btn-about1 i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-left: 8px;
+}
+
+.btn-about1:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 991.98px) {
+    .ssl-home-about-title {
+        font-size: 2.2rem;
+    }
+
+    .ssl-home-about-text {
+        font-size: 0.95rem;
+    }
+
+    .ssl-home-about-img {
+        height: 400px !important;
+    }
+
+    .btn-about1 {
+        padding: 6px 20px;
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ssl-home-about-title {
+        font-size: 1.8rem;
+    }
+
+    .ssl-home-about-text {
+        font-size: 0.9rem;
+    }
+
+    .ssl-home-about-img {
+        height: 300px !important;
+    }
+
+    .btn-about1 {
+        padding: 5px 18px;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ssl-home-about-title {
+        font-size: 1.5rem;
+    }
+
+    .ssl-home-about-text {
+        font-size: 0.85rem;
+    }
+
+    .ssl-home-about-img {
+        height: 250px !important;
+    }
+
+    .btn-about1 {
+        padding: 4px 15px;
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* footer css  */
+.ssl-footer {
+    background-color: #000 !important;
+    color: #fff;
+    font-size: 0.95rem;
+    border-top: 1px solid #f5f5f5;
+}
+
+.ssl-footer-logo {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.25rem;
+    border: 2px solid #007bff;
+}
+
+.ssl-footer-btn-contact {
+    background-color: #444242;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: 1px solid #444242;
+}
+
+.ssl-footer-btn-contact:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.ssl-footer-link-list li {
+    margin-bottom: 10px;
+}
+
+.ssl-footer-link-list a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ssl-footer-link-list a:hover {
+    text-decoration: underline;
+}
+
+.ssl-footer-divider {
+    border-color: #444;
+}
+
+.footer-logos {
+    width: 250px;
+}
+
+.ssl-footer-social {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff20;
+    /* light white transparent background */
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.ssl-footer-social:hover {
+    background-color: #ffffff80;
+    /* on hover make the background brighter */
+    color: #000;
+    transform: scale(1.1);
+}
+
+.footer-aaa {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Responsive: Tablet View (768px to 991px) */
+@media (max-width: 991.98px) {
+    .ssl-footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .ssl-footer-link-list {
+        width: 100%;
+    }
+
+    .ssl-footer-connect,
+    .ssl-footer-links {
+        text-align: left !important;
+    }
+
+    .ssl-footer-family {
+        justify-content: center !important;
+        margin-top: 1rem;
+    }
+
+    .footer-logos {
+        width: 200px;
+    }
+}
+
+/* Responsive: Mobile View (up to 767px) */
+@media (max-width: 767.98px) {
+    .ssl-footer-btn-contact {
+        padding: 8px 20px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ssl-footer-heading {
+        font-size: 1.2rem;
+    }
+
+    .ssl-footer-text {
+        font-size: 0.9rem;
+    }
+
+    .ssl-footer-link-list li {
+        margin-bottom: 8px;
+    }
+
+    .ssl-footer-link-list a {
+        font-size: 0.9rem;
+    }
+
+    .ssl-footer-copy,
+    .ssl-footer-family {
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+
+    .ssl-footer-social {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+
+    .footer-logos {
+        width: 180px;
+    }
+
+    .ssl-footer-links {
+        gap: 1rem;
+    }
+}
+
+/* Responsive: Very Small Devices (up to 480px) */
+@media (max-width: 480px) {
+    .ssl-footer-heading {
+        font-size: 1rem;
+    }
+
+    .ssl-footer-btn-contact {
+        font-size: 13px;
+        padding: 6px 15px;
+    }
+
+    .ssl-footer-social {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .footer-logos {
+        width: 150px;
+    }
+}
+
+
+.ssl-home-ban-section {
+    background-color: #000;
+}
+
+.ssl-home-ban-card {
+    height: 250px;
+    /* border-radius: 4px; */
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    object-fit: contain;
+}
+
+.ssl-home-ban-card1 {
+    background-image: url('../assets/banner-111.jpg');
+}
+
+.ssl-home-ban-card2 {
+    background-image: url('../assets/banner-222.jpg');
+}
+
+.ssl-home-ban-subtitle {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.ssl-home-ban-title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.ssl-home-ban-link {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+/* Tablet View: 768px to 991px */
+@media (max-width: 991px) {
+  .ssl-home-ban-card {
+    height: 180px;
+    padding: 1rem;
+  }
+
+  .ssl-home-ban-title {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .ssl-home-ban-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .ssl-home-ban-link {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile View: 576px to 767px */
+@media (max-width: 767px) {
+  .ssl-home-ban-card {
+    height: 160px;
+    padding: 0.75rem;
+  }
+
+  .ssl-home-ban-title {
+    font-size: 1rem;
+  }
+
+  .ssl-home-ban-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .ssl-home-ban-link {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small Mobile View: below 575px */
+@media (max-width: 575px) {
+  .ssl-home-ban-card {
+    height: 150px;
+    padding: 0.5rem;
+  }
+
+  .ssl-home-ban-title {
+    font-size: 0.95rem;
+  }
+
+  .ssl-home-ban-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .ssl-home-ban-link {
+    font-size: 0.7rem;
+    border: none;
+  }
+}
+
+
+/* our services css  */
+.ssl-home-service {
+  background-color: #000;
+  padding: 50px;
+}
+
+.ssl-home-service-title {
+  color: #fff;
+}
+
+.ssl-home-service-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.ssl-home-service-card {
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.ssl-home-service-card:hover {
+  border-color: #ffa500;
+  transform: translateY(-5px);
+}
+
+.ssl-home-service-img {
+  position: relative;
+}
+
+.ssl-home-service-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px;
+  border-radius: 0px;
+  background-color: #f57c00; /* orange */
+  font-size: 1.1rem;
+}
+
+.ssl-home-service-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 21px;
+  color: #ffa500;
+  transition: all 0.3s ease;
+}
+
+.ssl-home-service-link:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.ssl-rotate-arrow {
+  transform: rotate(-45deg); /* Makes it look like ↗ */
+}
+@media (max-width: 991.98px) {
+  .ssl-home-service {
+    padding: 40px 20px;
+  }
+
+  .ssl-home-service-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .ssl-home-service-link {
+    font-size: 20px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .ssl-home-service-icon {
+    font-size: 1rem;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .ssl-home-service {
+    padding: 30px 15px;
+  }
+
+  .ssl-home-service-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .ssl-home-service-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .ssl-home-service-card {
+    margin-bottom: 30px;
+  }
+
+  .ssl-home-service-link {
+    font-size: 18px;
+    bottom: 14px;
+    right: 14px;
+  }
+
+  .ssl-home-service-icon {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ssl-home-service {
+    padding: 20px 10px;
+  }
+
+  .ssl-home-service-title {
+    font-size: 1.6rem;
+  }
+
+  .ssl-home-service-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .ssl-home-service-link {
+    font-size: 16px;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  .ssl-home-service-icon {
+    font-size: 0.85rem;
+    padding: 4px;
+  }
+}
+
+/* banner section  */
+.ssl-home-numbercount {
+  background: url('../assets/full-banner1.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 70px 0;
+  position: relative;
+}
+
+
+.ssl-home-numbercount::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.ssl-home-numbercount .container {
+  position: relative;
+  z-index: 2;
+}
+
+.ssl-numbercount-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ssl-numbercount-subtitle {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  max-width: 600px;
+  color: #ddd;
+}
+
+.ssl-numbercount-btn {
+  background-color: #ffa500;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ssl-numbercount-btn:hover {
+  background-color: #ff8c00;
+  color: #000;
+}
+/* Tablet View (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .ssl-numbercount-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .ssl-numbercount-subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .ssl-numbercount-btn {
+    display: inline-block;
+    margin: 20px auto 0;
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  .ssl-home-numbercount .row {
+    text-align: center;
+  }
+}
+
+/* Mobile View (below 767px) */
+@media (max-width: 767.98px) {
+  .ssl-numbercount-title {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .ssl-numbercount-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+
+  .ssl-numbercount-btn {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .ssl-home-numbercount {
+    padding: 40px 0;
+    background-attachment: scroll; /* Prevent sticky issues on mobile */
+  }
+}
+
+
+/* awards section css  */
+.ssl-award-home-section {
+  background-color: #fff;
+}
+
+.ssl-award-home-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.ssl-award-home-logos {
+  margin-top: 20px;
+}
+
+.ssl-award-home-logo-img {
+  max-height: 40px;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.ssl-award-home-logo-img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
