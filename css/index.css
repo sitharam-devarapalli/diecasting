@@ -426,24 +426,6 @@ body {
     }
 }
 
-/* Large Devices (993px and above) */
-@media (min-width: 993px) {
-    .ssl-home-about {
-        padding: 50px 80px;
-    }
-
-    .ssl-home-about-title {
-        font-size: 3rem;
-    }
-
-    .ssl-home-about-text {
-        font-size: 1rem;
-    }
-
-    .ssl-home-about-img {
-        height: 500px !important;
-    }
-}
 
 
 
@@ -737,22 +719,6 @@ body {
     }
 }
 
-/* Large Devices (≥993px) */
-@media (min-width: 993px) {
-    .ssl-home-ban-section {
-        padding: 60px 80px;
-    }
-
-    .ssl-home-ban-card {
-        height: 250px;
-    }
-
-    .ssl-home-ban-title {
-        font-size: 1.3rem;
-    }
-}
-
-
 
 /* our services css  */
 .ssl-home-service {
@@ -885,21 +851,7 @@ body {
     }
 }
 
-/* Large Screens (993px and above) */
-@media (min-width: 993px) {
-    .ssl-home-service {
-        padding: 60px 80px;
-    }
 
-    .ssl-home-service-title {
-        font-size: 3rem;
-    }
-
-    .ssl-home-service-subtitle {
-        font-size: 1rem;
-        max-width: 700px;
-    }
-}
 
 
 /* banner section  */
@@ -1021,20 +973,6 @@ body {
     }
 }
 
-/* Large Screens (993px and above) */
-@media (min-width: 993px) {
-    .ssl-home-numbercount {
-        padding: 60px 80px;
-    }
-
-    .ssl-numbercount-title {
-        font-size: 2.5rem;
-    }
-
-    .ssl-numbercount-subtitle {
-        font-size: 1.1rem;
-    }
-}
 
 
 /* awards section css  */
@@ -1134,28 +1072,6 @@ body {
     }
 }
 
-/* Desktops (993px and above) */
-@media (min-width: 993px) {
-    .ssl-award-home-section {
-        padding: 60px 80px;
-    }
-
-    .ssl-award-home-title {
-        font-size: 1.75rem;
-    }
-
-    .ssl-award-home-logos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .ssl-award-home-logo-img {
-        max-height: 40px;
-        margin: 0 15px;
-    }
-}
 
 
 /* Why Choose Us - Dark Theme */
@@ -1240,27 +1156,6 @@ body {
 
     .ssl-home-whyus-title {
         font-size: 2rem;
-    }
-
-    .ssl-home-whyus-icon {
-        width: 60px;
-        height: 60px;
-    }
-
-    .ssl-home-whyus-text {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-}
-
-/* Desktops (993px and above) */
-@media (min-width: 993px) {
-    .ssl-home-whyus-section {
-        padding: 60px 80px;
-    }
-
-    .ssl-home-whyus-title {
-        font-size: 2.2rem;
     }
 
     .ssl-home-whyus-icon {
@@ -1628,29 +1523,7 @@ body {
     }
 }
 
-/* Large Devices (993px and above) */
-@media (min-width: 993px) {
-    .ssl-home-service-card img {
-        height: 200px;
-    }
 
-    .ssl-service-details {
-        padding: 50px;
-    }
-
-    .ssl-service-details h2 {
-        font-size: 2rem;
-    }
-
-    .ssl-inner-product-img {
-        height: 350px;
-    }
-
-    .ssl-product-bnt {
-        padding: 6px 24px;
-        font-size: 1rem;
-    }
-}
 
 
 
@@ -2015,26 +1888,5 @@ body {
 
     .ssl-about-team-info-overlay p {
         font-size: 0.85rem;
-    }
-}
-
-/* Large Laptop & Desktop (993px and above) */
-@media (min-width: 993px) {
-    .ssl-about-team-section {
-        padding: 60px 60px;
-    }
-
-    .ssl-about-team-img-wrapper img {
-        height: 300px;
-    }
-
-    .owl-nav {
-        justify-content: end !important;
-    }
-
-    .bi-chevron-left::before,
-    .bi-chevron-right::before {
-        font-size: 20px;
-        padding: 10px;
     }
 }
