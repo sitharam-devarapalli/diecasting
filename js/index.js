@@ -11,6 +11,3 @@
   carouselElement.addEventListener('slid.bs.carousel', function (e) {
     currentElem.innerText = e.to + 1;
   });
-
-
-  // gallery section effect js 

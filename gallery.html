@@ -276,6 +276,7 @@
 
 
 
+
     <!-- footer code  -->
     <footer class="ssl-footer bg-dark text-white pt-5 pb-3">
         <div class="container-fluid px-5">
@@ -293,7 +294,7 @@
                     <p class="ssl-footer-text mb-3">Stay up to date with Dynacast and receive emails highlighting news,
                         events,
                         and innovative tools.</p>
-                    <a href="#" class="btn ssl-footer-btn-contact">
+                    <a href="contact.html" class="btn ssl-footer-btn-contact">
                         Contact <i class="fas fa-chevron-right ms-2"></i>
                     </a>
                 </div>
@@ -301,25 +302,25 @@
                 <!-- Middle links -->
                 <div class="col-lg-8 col-md-12 ssl-footer-links d-flex justify-content-between flex-wrap mb-4">
                     <ul class="list-unstyled ssl-footer-link-list">
-                        <li><a href="#">Die Casting Technologies</a></li>
-                        <li><a href="#">Additional Capabilities</a></li>
-                        <li><a href="#">Metals</a></li>
-                        <li><a href="#">Industries</a></li>
-                        <li><a href="#">Resources</a></li>
+                        <li><a href="product.html">Aluminium alloy castings</a></li>
+                        <li><a href="product.html">Machining of castings</a></li>
+                        <li><a href="product.html">Heat treatment</a></li>
+                        <li><a href="product.html">Shot blasting</a></li>
+                        <li><a href="product.html">Powder coating</a></li>
                     </ul>
                     <ul class="list-unstyled ssl-footer-link-list">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#" target="_blank">Locations</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Locations</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="product.html">Our Services</a></li>
                         <li><a href="#">Careers</a></li>
                     </ul>
                     <ul class="list-unstyled ssl-footer-link-list">
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Request a Quote</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Policies</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html">Request a Quote</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Privacy & Policies</a></li>
+                        <li><a href="index.html">Home</a></li>
                     </ul>
                 </div>
             </div>
@@ -343,80 +344,8 @@
 
 
 </body>
-<script src="js/index.js"></script>
+<script src="js/about.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const galleryContainer = document.getElementById("gallery-container");
-    const galleryPerPage = 8;
-    const totalPages = Math.ceil(galleryItems.length / galleryPerPage);
-    let currentPage = 1;
-
-    const pageIndicator = document.getElementById("page-indicator");
-    const pagination = document.getElementById("pagination");
-
-    function applySlideAnimation(direction) {
-        // Remove existing animation classes
-        galleryContainer.classList.remove("gallery-slide-left", "gallery-slide-right");
-
-        // Trigger reflow to reset animation
-        void galleryContainer.offsetWidth;
-
-        // Add new animation class
-        galleryContainer.classList.add(direction === "left" ? "gallery-slide-left" : "gallery-slide-right");
-    }
-
-    function renderGallery(page, direction = "right") {
-        const start = (page - 1) * galleryPerPage;
-        const end = start + galleryPerPage;
-
-        // Animate gallery
-        applySlideAnimation(direction);
-
-        // Show/hide items
-        galleryItems.forEach((item, index) => {
-            item.style.display = index >= start && index < end ? 'block' : 'none';
-        });
-
-        pageIndicator.innerText = `Page ${page} of ${totalPages}`;
-    }
-
-    function renderPagination(page) {
-        pagination.innerHTML = "";
-
-        const createPageItem = (p, label = null) => {
-            const li = document.createElement("li");
-            li.className = `page-item ${p === page ? "active" : ""}`;
-            li.innerHTML = `<a class="page-link" href="#">${label || p}</a>`;
-            li.addEventListener("click", (e) => {
-                e.preventDefault();
-                if (p !== currentPage) {
-                    const direction = p > currentPage ? "right" : "left";
-                    currentPage = p;
-                    renderGallery(currentPage, direction);
-                    renderPagination(currentPage);
-                }
-            });
-            return li;
-        };
-
-        if (page > 1) pagination.appendChild(createPageItem(page - 1, "Previous"));
-
-        const startPage = Math.max(1, page - 1);
-        const endPage = Math.min(totalPages, page + 1);
-
-        for (let i = startPage; i <= endPage; i++) {
-            pagination.appendChild(createPageItem(i));
-        }
-
-        if (page < totalPages) pagination.appendChild(createPageItem(page + 1, "Next Page"));
-    }
-
-    // Initial load
-    renderGallery(currentPage);
-    renderPagination(currentPage);
-</script>
 
 </html>

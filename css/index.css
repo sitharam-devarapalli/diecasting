@@ -653,6 +653,7 @@ body {
     text-decoration: none;
     border-bottom: 1px solid #fff;
 }
+
 /* Mobile View (max-width: 576px) */
 @media (max-width: 576px) {
     .ssl-home-ban-section {
@@ -779,6 +780,7 @@ body {
     transform: rotate(-45deg);
     /* Makes it look like ↗ */
 }
+
 /* Mobile View (max-width: 576px) */
 @media (max-width: 576px) {
     .ssl-home-service {
@@ -906,11 +908,13 @@ body {
     border: 1px solid #fff;
     color: #fff;
 }
+
 /* Mobile View (max-width: 576px) */
 @media (max-width: 576px) {
     .ssl-home-numbercount {
         padding: 30px 15px;
-        background-attachment: scroll; /* disables parallax on mobile for performance */
+        background-attachment: scroll;
+        /* disables parallax on mobile for performance */
     }
 
     .ssl-numbercount-title {
@@ -1000,6 +1004,7 @@ body {
     opacity: 1;
     filter: grayscale(0%);
 }
+
 /* Mobile Devices (max-width: 576px) */
 @media (max-width: 576px) {
     .ssl-award-home-section {
@@ -1102,6 +1107,7 @@ body {
     line-height: 1.4;
     min-height: 60px;
 }
+
 /* Mobile Devices (max-width: 576px) */
 @media (max-width: 576px) {
     .ssl-home-whyus-section {
@@ -1270,7 +1276,8 @@ body {
     .ssl-contactus-info p {
         font-size: 0.9rem;
     }
-    .ssl-contact-send{
+
+    .ssl-contact-send {
         margin-bottom: 15px;
     }
 
@@ -1303,7 +1310,8 @@ body {
     .ssl-contactus-info p {
         text-align: center;
     }
-    .ssl-contact-send{
+
+    .ssl-contact-send {
         margin-bottom: 15px;
     }
 }
@@ -1457,7 +1465,7 @@ body {
 
     .ssl-service-details h2 {
         font-size: 1.5rem;
-        text-align: center;
+        text-align: start;
     }
 
     .ssl-inner-product-img {
@@ -1485,6 +1493,7 @@ body {
 
     .ssl-service-details h2 {
         font-size: 1.75rem;
+        text-align: start;
     }
 
     .ssl-inner-product-img {
@@ -1496,33 +1505,6 @@ body {
         font-size: 0.9rem;
     }
 }
-
-/* Small Laptop (769px to 992px) */
-@media (min-width: 769px) and (max-width: 992px) {
-    .ssl-home-service-card img {
-        height: 220px;
-    }
-
-    .ssl-service-details {
-        padding: 40px;
-    }
-
-    .ssl-service-details h2 {
-        font-size: 1.9rem;
-    }
-
-    .ssl-inner-product-img {
-        height: 300px;
-    }
-
-    .ssl-product-bnt {
-        padding: 6px 22px;
-        font-size: 1rem;
-    }
-}
-
-
-
 
 
 /* gallery section css  */
@@ -1812,9 +1794,7 @@ body {
 .owl-nav button:hover .bi-chevron-right::before {
     background-color: transparent;
     color: #fff;
-    /* transform: scale(1.1); */
     border: 1px #fff solid;
-    /* box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3); */
 }
 
 /* Mobile (up to 576px) */
@@ -1887,4 +1867,278 @@ body {
     .ssl-about-team-info-overlay p {
         font-size: 0.85rem;
     }
+}
+
+
+/* our vision and mission css  */
+.ssl-about-vision {
+    background-color: #000;
+    padding: 50px;
+}
+
+.ssl-about-vision-block {
+    background-color: #000;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.ssl-about-vision-img {
+    height: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.ssl-about-vision-content {
+    padding: 30px;
+}
+
+.ssl-about-vision-content h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.ssl-about-vision-content p {
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.ssl-about-vision-content small {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.ssl-about-vision-btn {
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
+.ssl-about-vision-btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* ✅ Tablet View */
+@media (max-width: 991px) {
+    .ssl-about-vision-content {
+        padding: 20px;
+    }
+
+    .ssl-about-vision-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .ssl-about-vision-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ✅ Mobile View */
+@media (max-width: 767px) {
+    .ssl-about-vision-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ssl-about-vision {
+        background-color: #000;
+        padding: 30px;
+    }
+
+    .ssl-about-vision-img {
+        width: 100%;
+        height: 250px;
+        min-height: auto;
+    }
+
+    .ssl-about-vision-content {
+        padding: 20px 15px;
+    }
+
+    .ssl-about-vision-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .ssl-about-vision-content p {
+        font-size: 0.9rem;
+    }
+
+    .ssl-about-vision-btn {
+        font-size: 0.8rem;
+        padding: 8px 18px;
+    }
+}
+
+
+
+/* number count section css  */
+.ssl-about-numbers {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.ssl-number-box {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.ssl-number-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background-color: #333;
+}
+
+.ssl-number-box:last-child::after {
+    display: none;
+}
+
+.ssl-number-value {
+    font-size: 7rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.ssl-number-label {
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #fff;
+    z-index: 2;
+}
+
+/* ✅ Tablet View (768px to 991px) */
+@media (max-width: 991px) {
+    .ssl-number-value {
+        font-size: 5rem;
+    }
+
+    .ssl-number-label {
+        font-size: 0.95rem;
+    }
+
+    .ssl-number-box::after {
+        height: 1px;
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .ssl-number-box:last-child::after {
+        display: none;
+    }
+}
+
+/* ✅ Mobile View (below 768px) */
+@media (max-width: 767px) {
+    .ssl-number-value {
+        font-size: 3.5rem;
+    }
+
+    .ssl-number-label {
+        font-size: 0.9rem;
+    }
+
+    .ssl-number-box {
+        padding: 30px 0;
+    }
+
+    .ssl-number-box::after {
+        height: 1px;
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .ssl-number-box:last-child::after {
+        display: none;
+    }
+}
+
+
+/* about page why choose us css  */
+.ssl-about-whychoose {
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+}
+
+.ssl-about-whychoose-subtitle {
+  color: #fbd204;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.ssl-about-whychoose-title {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.ssl-about-whychoose-desc {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.ssl-about-whychoose-image img {
+  border-radius: 5px;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.ssl-about-feature-item img {
+  background-color: #fbd204;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100px;
+  height: 50px;
+}
+
+.ssl-about-feature-item h6 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.ssl-about-feature-item p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.arrow-shape {
+  width: 0;
+  height: 0;
+  border-left: 25px solid #fbd204;
+  border-top: 25px solid transparent;
+  transform: rotate(-45deg);
 }
