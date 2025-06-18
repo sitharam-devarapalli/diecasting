@@ -792,6 +792,19 @@ body {
     transform: rotate(-45deg);
     /* Makes it look like ↗ */
 }
+.ssl-home-service-card {
+    will-change: transform;
+    transition: transform 0.3s ease;
+}
+.ssl-home-service-icon,
+.ssl-home-service-link {
+    will-change: transform;
+}
+
+.ssl-home-service-img img {
+    loading: lazy;
+}
+
 
 /* Mobile View (max-width: 576px) */
 @media (max-width: 576px) {
