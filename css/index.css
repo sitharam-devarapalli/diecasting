@@ -1388,6 +1388,10 @@ body {
     object-fit: cover;
     border-radius: 8px;
 }
+.ssl-home-service-card {
+    will-change: transform;
+    transform: translateZ(0);
+}
 
 .ssl-service-details {
     padding: 50px;
