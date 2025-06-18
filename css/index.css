@@ -11,8 +11,8 @@ body {
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     backface-visibility: hidden;
-    transform: translateZ(0);
-    will-change: transform;
+    /* transform: translateZ(0); */
+    /* will-change: transform; */
 }
 
 /* Header */
