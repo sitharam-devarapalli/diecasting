@@ -1,6 +1,18 @@
-/* Global font */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 /* Header */
@@ -1388,6 +1400,7 @@ body {
     object-fit: cover;
     border-radius: 8px;
 }
+
 .ssl-home-service-card {
     will-change: transform;
     transform: translateZ(0);
@@ -2088,61 +2101,61 @@ body {
 
 /* about page why choose us css  */
 .ssl-about-whychoose {
-  background-color: #000;
-  color: #fff;
-  padding: 50px;
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
 }
 
 .ssl-about-whychoose-subtitle {
-  color: #fbd204;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 0.85rem;
+    color: #fbd204;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 0.85rem;
 }
 
 .ssl-about-whychoose-title {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 1.3;
-  color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #fff;
 }
 
 .ssl-about-whychoose-desc {
-  font-size: 1rem;
-  color: #ccc;
+    font-size: 1rem;
+    color: #ccc;
 }
 
 .ssl-about-whychoose-image img {
-  border-radius: 5px;
-  max-height: 480px;
-  object-fit: cover;
+    border-radius: 5px;
+    max-height: 480px;
+    object-fit: cover;
 }
 
 .ssl-about-feature-item img {
-  background-color: #fbd204;
-  padding: 8px;
-  border-radius: 4px;
-  width: 100px;
-  height: 50px;
+    background-color: #fbd204;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100px;
+    height: 50px;
 }
 
 .ssl-about-feature-item h6 {
-  color: #fff;
-  font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 5px;
 }
 
 .ssl-about-feature-item p {
-  color: #ccc;
-  font-size: 0.9rem;
-  margin: 0;
+    color: #ccc;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .arrow-shape {
-  width: 0;
-  height: 0;
-  border-left: 25px solid #fbd204;
-  border-top: 25px solid transparent;
-  transform: rotate(-45deg);
+    width: 0;
+    height: 0;
+    border-left: 25px solid #fbd204;
+    border-top: 25px solid transparent;
+    transform: rotate(-45deg);
 }
