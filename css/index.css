@@ -1418,8 +1418,11 @@ h1, h2, h3, h4, h5, h6, .font-didot {
 .ssl-service-details h2 {
     font-size: 2rem;
     margin-bottom: 15px;
+    color: #001B50 !important;
 }
-
+.ssl-product-titless, .ssl-product-para{
+    color: #001B50 !important;
+}
 .ssl-inner-product-img {
     width: 100%;
     height: 350px;
@@ -1436,8 +1439,8 @@ h1, h2, h3, h4, h5, h6, .font-didot {
     gap: 6px;
     overflow: hidden;
     background-color: transparent;
-    border: 2px solid #fdfdd8;
-    color: #fdfdd8;
+    border: 2px solid #001B50;
+    color: #001B50;
     font-weight: 600;
     padding: 6px 18px;
     border-radius: 30px;
@@ -1452,17 +1455,18 @@ h1, h2, h3, h4, h5, h6, .font-didot {
     right: 100%;
     width: 100%;
     height: 100%;
-    background-color: #fdfdd8;
+    background-color: #001B50;
     transition: right 0.4s ease;
     z-index: -1;
 }
 
 .ssl-product-bnt:hover::before {
     right: 0;
+
 }
 
 .ssl-product-bnt:hover {
-    color: #000;
+    color: #fff;
 }
 
 .ssl-product-bnt i {
